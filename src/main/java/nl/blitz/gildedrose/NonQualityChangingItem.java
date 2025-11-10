@@ -2,11 +2,11 @@ package nl.blitz.gildedrose;
 
 public class NonQualityChangingItem extends Item {
 
-    protected final int fixedQuality; // stała jakość dla wszystkich NonQualityChangingItem
+    protected final int fixedQuality; 
 
     public NonQualityChangingItem(String name, int sellIn, int quality) {
         super(name, sellIn, quality);
-        this.fixedQuality = quality; // przypisujemy wartość podaną w konstruktorze
+        this.fixedQuality = quality; 
     }
 
     public int getQuality() {

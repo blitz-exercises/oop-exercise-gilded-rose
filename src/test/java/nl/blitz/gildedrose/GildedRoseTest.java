@@ -23,10 +23,10 @@ class GildedRoseTest {
         }
 
         // quality changing
-        assertEquals(11, ((AgedBrie) items[0]).quality, "Aged Brie +1");
-        assertEquals(21, ((BackstagePasses) items[1]).quality, "Backstage +1 (sellIn > 10)");
-        assertEquals(6, ((NonConjuredItem) items[2]).quality, "Normal +1");
-        assertEquals(4, ((ConjuredItem) items[3]).quality, "Conjured -2");
+        assertEquals(11, ((AgedBrie) items[0]).getQuality(), "Aged Brie +1");
+        assertEquals(21, ((BackstagePasses) items[1]).getQuality(), "Backstage +1 (sellIn > 10)");
+        assertEquals(6, ((NonConjuredItem) items[2]).getQuality(), "Normal +1");
+        assertEquals(4, ((ConjuredItem) items[3]).getQuality(), "Conjured -2");
 
         // quality non changing
         assertEquals(80, ((Sulfuras) items[4]).getQuality(), "Sulfuras quality stays 80");
