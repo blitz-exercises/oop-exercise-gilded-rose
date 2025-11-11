@@ -6,7 +6,7 @@ public abstract class QualityChangingItem extends Item {
         super(name, sellIn, quality);
     }
 
-    public abstract void updateQuality(); // abstract becouse the children will implement
+    public abstract void updateQuality(); // abstract because the children will implement
 
     public int getQuality() {
         return quality;

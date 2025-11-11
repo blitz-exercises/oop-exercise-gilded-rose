@@ -11,7 +11,10 @@ public class AgedBrie extends NonConjuredItem {
         super.updateQuality(); // call the parent, there are the calculations
         
         // Aged Brie specific calculations, extention, not modification
-        if (quality > 50) {
+        if (sellIn < 0) {
+            quality += 1;
+        }
+        if (quality >= 50) {
             quality = 50;
         }
     }

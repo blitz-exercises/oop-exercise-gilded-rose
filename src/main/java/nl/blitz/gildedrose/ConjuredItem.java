@@ -8,7 +8,12 @@ public class ConjuredItem extends QualityChangingItem {
 
     @Override
     public void updateQuality() {
-        quality -= 2; // Conjured = double min
-        sellIn-=1;
+        if (sellIn > 0) {
+            quality -= 2;
+        } if (sellIn <= 0 ) {
+            quality -= 4;
+        }
+
+        sellIn -= 1;
     }
 }
